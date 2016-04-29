@@ -1,0 +1,17 @@
+﻿<Window x:Class="LayoutWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LayoutWatcher"
+        mc:Ignorable="d"
+        WindowState="Minimized"
+        Title="Layout Watcher Logs" Height="350" Width="525" Icon="icon.ico" ResizeMode="CanMinimize">
+    <Grid>
+        <ScrollViewer>
+            <TextBox x:Name="textBox" 
+                 HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch"
+                 MaxLines="10000" />
+        </ScrollViewer>
+    </Grid>
+</Window>
