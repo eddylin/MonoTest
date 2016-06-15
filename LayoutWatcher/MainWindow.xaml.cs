@@ -29,7 +29,19 @@ namespace LayoutWatcher
         public MainWindow()
         {
             InitializeComponent();
-            LogInfo(DateTime.Now.ToString() + " " + "系统已经启动");
+            this.Left = System.Windows.SystemParameters.PrimaryScreenWidth - 350;
+            this.Top = System.Windows.SystemParameters.PrimaryScreenHeight - 200;
+
+            System.Timers.Timer timer = new System.Timers.Timer();
+            timer.Elapsed += new ElapsedEventHandler((sender, e2) =>
+            {
+                Dispatcher.Invoke(new Action(()=> {
+                    this.textBox.Visibility = Visibility.Hidden;
+                }));
+            });
+
+            timer.Interval = 3500;
+            timer.Enabled = true;
         }
         
         protected override void OnClosed(EventArgs e)
@@ -40,12 +52,24 @@ namespace LayoutWatcher
 
         public void LogInfo(string info)
         {
-            if(!string.IsNullOrEmpty(this.textBox.Text))
-            {
-                this.textBox.AppendText("\r\n");
-            }
-            this.textBox.AppendText(info);
+            this.textBox.Text = (info);
+            this.textBox.Visibility = Visibility.Visible;
         }
 
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        protected override void OnDeactivated(EventArgs e)
+        {
+            base.OnDeactivated(e);
+            this.Topmost = true;
+        }
     }
 }

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutWatcher", "LayoutWatcher\LayoutWatcher.csproj", "{31350116-2B50-4C7A-8F74-C554B5EC38E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageChecker", "ImageChecker\ImageChecker.csproj", "{A8AEAB81-7DA9-488A-8630-D93B809FA0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemPreview", "ItemPreview\ItemPreview.csproj", "{2407DBB6-A967-4299-AF62-0C74AC7B6A7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{31350116-2B50-4C7A-8F74-C554B5EC38E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31350116-2B50-4C7A-8F74-C554B5EC38E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31350116-2B50-4C7A-8F74-C554B5EC38E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8AEAB81-7DA9-488A-8630-D93B809FA0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AEAB81-7DA9-488A-8630-D93B809FA0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AEAB81-7DA9-488A-8630-D93B809FA0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8AEAB81-7DA9-488A-8630-D93B809FA0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2407DBB6-A967-4299-AF62-0C74AC7B6A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2407DBB6-A967-4299-AF62-0C74AC7B6A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2407DBB6-A967-4299-AF62-0C74AC7B6A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2407DBB6-A967-4299-AF62-0C74AC7B6A7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
